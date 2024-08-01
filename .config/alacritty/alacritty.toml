@@ -1,0 +1,31 @@
+import = ["/home/nux/.config/alacritty/themes/rose-pine.toml"]
+live_config_reload = true
+
+[font]
+size = 9.5
+
+[font.bold]
+family = "JetBrains Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "JetBrains Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "JetBrains Mono"
+style = "Italic"
+
+[font.normal]
+family = "JetBrains Mono"
+style = "Medium"
+
+[shell]
+program = "/bin/zsh"
+
+[window]
+opacity = 1
+
+[window.padding]
+x = 10
+y = 10
