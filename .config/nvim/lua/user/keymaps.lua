@@ -35,3 +35,6 @@ keymap(NORMAL_MODE, "<A-j>", ":m .+1<CR>==", opts)
 keymap(NORMAL_MODE, "<A-k>", ":m .-2<CR>==", opts)
 keymap(VISUAL_BLOCK_MODE, "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap(VISUAL_BLOCK_MODE, "<A-k>", ":move '<-2<CR>gv-gv", opts)
+
+-- Switching between Cattpuccin/Rose-pine colorscheme
+keymap(NORMAL_MODE, "<Leader>c", ":lua switch_colorscheme()<CR>", opts)

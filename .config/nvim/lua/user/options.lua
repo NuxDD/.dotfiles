@@ -23,6 +23,8 @@ local options = {
 	signcolumn = "yes",
 	scrolloff = 8,
 	sidescrolloff = 8,
+	shiftwidth = 2,
+	tabstop = 2,
 }
 
 for key, value in pairs(options) do
