@@ -9,3 +9,6 @@ require "user.plugins"
 
 -- Apply colorscheme
 require "user.colorscheme"
+
+-- Import completion
+require "user.completion"
