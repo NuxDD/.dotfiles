@@ -12,3 +12,6 @@ require "user.colorscheme"
 
 -- Import completion
 require "user.completion"
+
+-- Import LSP
+require "user.lsp"
