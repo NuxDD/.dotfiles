@@ -21,7 +21,7 @@ family = "JetBrains Mono"
 style = "Medium"
 
 [shell]
-program = "/bin/zsh"
+program = "/bin/fish"
 
 [window]
 opacity = 1
