@@ -18,3 +18,6 @@ require "user.lsp"
 
 -- Import Telescope
 require "user.telescope"
+
+-- Import Harpoon
+require "user.harpoon"

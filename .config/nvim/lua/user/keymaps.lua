@@ -43,3 +43,14 @@ keymap(NORMAL_MODE, "<Leader>c", ":lua switch_colorscheme()<CR>", opts)
 keymap(NORMAL_MODE, "<leader>f", "<cmd>lua require'telescope.builtin'.find_files({find_command = { 'rg', '--files', '--iglob', '!.git', '--hidden' },})<CR>", opts)
 keymap(NORMAL_MODE, "<leader>/", "<cmd>Telescope live_grep<CR>", opts)
 keymap(NORMAL_MODE, "<leader>g", "<cmd> Telescope git_files<CR>", opts)
+
+-- Harpoon related
+keymap(NORMAL_MODE, "<leader>a", "<cmd>lua mark.add_file()<CR>", opts)
+keymap(NORMAL_MODE, "<C-e>", "<cmd>lua ui.toggle_quick_menu()<CR>", opts)
+
+keymap(NORMAL_MODE, "<A-a>", "<cmd>lua ui.nav_file(1)<CR>" , opts)
+keymap(NORMAL_MODE, "<A-s>", "<cmd>lua ui.nav_file(2)<CR>", opts)
+keymap(NORMAL_MODE, "<A-d>", "<cmd>lua ui.nav_file(3)<CR>" , opts)
+keymap(NORMAL_MODE, "<A-f>", "<cmd>lua ui.nav_file(4)<CR>", opts)
+keymap(NORMAL_MODE, "<A-j>", "<cmd>lua ui.nav_next()<CR>", opts)
+keymap(NORMAL_MODE, "<A-k>", "<cmd>lua ui.nav_prev()<CR>", opts)
