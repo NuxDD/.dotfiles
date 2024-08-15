@@ -68,6 +68,12 @@ return packer.startup(function(use)
 	-- Harpoon
 	use "ThePrimeagen/harpoon"
 
+	-- Treesitter
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  }
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()

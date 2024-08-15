@@ -21,3 +21,6 @@ require "user.telescope"
 
 -- Import Harpoon
 require "user.harpoon"
+
+-- Import Treesitter
+require "user.treesitter"
