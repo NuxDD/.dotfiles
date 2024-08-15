@@ -1,4 +1,4 @@
-local servers = {}
+local servers = {"rust_analyzer"}
 
 local settings = {
 	ui = {

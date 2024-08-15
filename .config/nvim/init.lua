@@ -15,3 +15,6 @@ require "user.completion"
 
 -- Import LSP
 require "user.lsp"
+
+-- Import Telescope
+require "user.telescope"
