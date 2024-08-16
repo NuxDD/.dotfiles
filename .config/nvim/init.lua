@@ -24,3 +24,6 @@ require "user.harpoon"
 
 -- Import Treesitter
 require "user.treesitter"
+
+-- Import autopairs
+require "user.autopairs"
