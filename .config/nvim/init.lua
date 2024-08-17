@@ -4,6 +4,9 @@ require "user.options"
 -- Import user-defined keymaps
 require "user.keymaps"
 
+-- Import user-defined autocmd
+require "user.autocmd_run"
+
 -- Import packages related stuff/auto install packer 
 require "user.plugins"
 
@@ -27,3 +30,4 @@ require "user.treesitter"
 
 -- Import autopairs
 require "user.autopairs"
+
