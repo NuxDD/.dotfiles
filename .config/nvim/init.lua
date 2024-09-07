@@ -31,3 +31,5 @@ require "user.treesitter"
 -- Import autopairs
 require "user.autopairs"
 
+-- Import accents related
+require "user.accents"
