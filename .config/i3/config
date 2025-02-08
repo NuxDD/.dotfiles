@@ -93,9 +93,10 @@ assign [class="discord"] workspace number 3
 exec --no-startup-id firefox
 exec --no-startup-id alacritty
 exec --no-startup-id discord
-exec --no-startup-id feh --bg-scale ~/wallpapers/background.png
+exec --no-startup-id feh --bg-scale ~/.wp/wp.png
 exec --no-startup-id picom
 exec_always --no-startup-id "killall polybar; polybar -r default"
+exec_always --no-startup-id "xinput set-prop 'Logitech G203 Prodigy Gaming Mouse' 'libinput Accel Speed' -1"
 
 ###### THEME - ROSE PINE
 set $rosewater #f5e0dc
