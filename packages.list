@@ -29,3 +29,5 @@ unzip
 pipewire
 pipewire-audio
 mesa
+luarocks
+lua51
