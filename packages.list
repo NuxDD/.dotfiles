@@ -19,7 +19,13 @@ ttf-jetbrains-mono
 ttf-font-awesome
 ttf-nerd-fonts-symbols
 feh
-man-pages
+man-db
 sddm
 picom
 neovim
+xclip
+zip
+unzip
+pipewire
+pipewire-audio
+mesa
