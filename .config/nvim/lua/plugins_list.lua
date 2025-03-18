@@ -90,4 +90,7 @@ return {
 	-- Harpoon yaaaaay
 	"ThePrimeagen/harpoon",
 
+	-- Hexadecimal colorizer
+	"norcalli/nvim-colorizer.lua"
+
 }
