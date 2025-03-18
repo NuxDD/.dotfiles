@@ -31,3 +31,5 @@ pipewire-audio
 mesa
 luarocks
 lua51
+gdb
+texlive
