@@ -33,3 +33,4 @@ luarocks
 lua51
 gdb
 texlive
+rust-src

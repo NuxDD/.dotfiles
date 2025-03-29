@@ -24,3 +24,8 @@ function nv --wraps nvim
     end
 end
 
+# Cargo related
+alias cr="cargo run"
+alias cb="cargo build"
+alias cc="cargo check"
+
