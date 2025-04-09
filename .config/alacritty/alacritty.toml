@@ -1,8 +1,8 @@
-general.import = ["/home/nux/.config/alacritty/themes/rose-pine.toml"]
+general.import = ["/home/mds/.config/alacritty/themes/rose-pine.toml"]
 general.live_config_reload = true
 
 [font]
-size = 9.5
+size = 9
 
 [font.bold]
 family = "JetBrains Mono"
