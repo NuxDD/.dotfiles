@@ -54,5 +54,6 @@ keymap(NORMAL_MODE, "<A-k>", "<cmd>lua ui.nav_prev()<CR>", opts)
 
 -- Rust related
 keymap(NORMAL_MODE, "<C-i>r", ":term cargo run<CR>i", opts)
+keymap(NORMAL_MODE, "<C-i>d", ":term RUST_BACKTRACE=1 cargo run<CR>i", opts)
 keymap(NORMAL_MODE, "<C-i>b", ":term cargo build<CR>i", opts)
 keymap(NORMAL_MODE, "<C-i>c", ":term cargo check<CR>i", opts)
