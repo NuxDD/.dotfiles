@@ -2,10 +2,13 @@
 # Set Super as the Mod key
 set $mod Mod4
 
+# Set Alt bind
+set $alt Mod1
+
 # Floating related
 bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
-floating_modifier $mod
+floating_modifier $alt
 
 # Start a terminal
 bindsym $mod+Return exec alacritty
