@@ -13,6 +13,12 @@ keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+-- Buffer Navigation
+keymap(INSERT_MODE, "<C-h>", "<Left>", opts)
+keymap(INSERT_MODE, "<C-j>", "<Down>", opts)
+keymap(INSERT_MODE, "<C-k>", "<Up>", opts)
+keymap(INSERT_MODE, "<C-l>", "<Right>", opts)
+
 -- Windows navigation
 keymap(NORMAL_MODE, "<C-h>", "<C-w>h", opts)
 keymap(NORMAL_MODE, "<C-j>", "<C-w>j", opts)
