@@ -23,10 +23,15 @@ local options = {
 	signcolumn = "yes",
 	scrolloff = 8,
 	sidescrolloff = 8,
-	shiftwidth = 2,
-	tabstop = 2,
+	shiftwidth = 4,
+	softtabstop = 4,
+	tabstop = 4,
+	mouse = "",
 }
 
 for key, value in pairs(options) do
 	vim.opt[key] = value
 end
+
+-- Rust autoformat on save
+vim.g.rustfmt_autosave = 1
