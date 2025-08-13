@@ -87,19 +87,19 @@ bindsym $mod+Shift+8 move container to workspace number 8
 bindsym $mod+Shift+9 move container to workspace number 9
 bindsym $mod+Shift+0 move container to workspace number 10
 
-assign [class="firefox"] workspace number 1
+assign [class="Chromium"] workspace number 1
 assign [class="Alacritty"] workspace number 2
-assign [class="Chromium"] workspace number 2
 assign [class="discord"] workspace number 3
 
 ###### COMMANDS EXECUTED AT START
-exec --no-startup-id firefox
+exec --no-startup-id chromium
 exec --no-startup-id alacritty
 exec --no-startup-id discord
 exec --no-startup-id feh --bg-scale ~/.wp/wp.png
 exec --no-startup-id picom
 exec_always --no-startup-id "killall polybar; polybar -r default"
-exec_always --no-startup-id "xinput set-prop 'Logitech G203 Prodigy Gaming Mouse' 'libinput Accel Speed' -1"
+exec_always --no-startup-id "xinput set-prop 'Logitech G203 Prodigy Gaming Mouse' 'libinput Accel Speed' 0"
+exec_always --no-startup-id "xinput set-prop 'Logitech G203 Prodigy Gaming Mouse' 'libinput Accel Profile Enabled' 0 1 0"
 exec_always --no-startup-id "setxkbmap -layout us,us -variant ,intl -option grp:win_space_toggle"
 
 ###### THEME - ROSE PINE

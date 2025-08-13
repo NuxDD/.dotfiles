@@ -38,3 +38,6 @@ rust-src
 bind
 whois
 zaproxy
+fuse
+thrift
+protobuf
