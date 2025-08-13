@@ -33,4 +33,8 @@ luarocks
 lua51
 gdb
 texlive
+texlive-lang
 rust-src
+bind
+whois
+zaproxy
