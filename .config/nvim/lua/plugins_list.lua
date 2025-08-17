@@ -91,6 +91,12 @@ return {
 	"ThePrimeagen/harpoon",
 
 	-- Hexadecimal colorizer
-	"norcalli/nvim-colorizer.lua"
+	"norcalli/nvim-colorizer.lua",
 
+	-- TODO/FIXME and stuff.
+	{
+		"folke/todo-comments.nvim",
+		dependencies = { "nvim-lua/plenary.nvim" },
+		opts = {}
+	}
 }
