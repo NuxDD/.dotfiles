@@ -39,39 +39,24 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 -- Mason setup
 require("mason").setup()
 require("mason-lspconfig").setup({
-    ensure_installed = { "lua_ls", "rust_analyzer" },
-})
+	function(server_name)
+		require("lspconfig")[server_name].setup {
+			on_attach = on_attach,
+			capabilities = capabilities
+		}
+	end,
 
-local function setup_lsp_servers()
-    local lspconfig = require('lspconfig')
-    local installed_servers = require("mason-lspconfig").get_installed_servers()
-    
-    local default_setup = {
-        on_attach = on_attach,
-        capabilities = capabilities,
-    }
-    
-    -- Custom configurations for specific servers
-    local custom_configs = {
-        lua_ls = function()
-            require('neodev').setup()
-            lspconfig.lua_ls.setup(vim.tbl_deep_extend("force", default_setup, {
-                settings = {
-                    Lua = {
-                        workspace = { checkThirdParty = false },
-                        telemetry = { enable = false },
-                    },
-                }
-            }))
-        end,
-    }
-    
-    for _, server_name in ipairs(installed_servers) do
-        if custom_configs[server_name] then
-            custom_configs[server_name]()
-        else
-            lspconfig[server_name].setup(default_setup)
-        end
-    end
-end
-setup_lsp_servers()
+	["lua_ls"] = function()
+		require('neodev').setup()
+		require('lspconfig').lua_ls.setup {
+			on_attach = on_attach,
+			capabilities = capabilities,
+			settings = {
+				Lua = {
+					workspace = { checkThirdParty = false },
+					telemetry = { enable = false },
+				},
+			}
+		}
+	end,
+})

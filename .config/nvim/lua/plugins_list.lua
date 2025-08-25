@@ -1,5 +1,4 @@
 return {
-
 	-- Autocomments
 	{
 		"numToStr/Comment.nvim",
@@ -106,5 +105,22 @@ return {
 		"folke/todo-comments.nvim",
 		dependencies = { "nvim-lua/plenary.nvim" },
 		opts = {}
+	},
+
+	-- Fidget for LSP progress stuff
+	{
+		"j-hui/fidget.nvim",
+	},
+
+	-- Rust related stuff
+	{
+		'mrcjkb/rustaceanvim',
+		version = '^6', -- Recommended
+		lazy = false, -- This plugin is already lazy
+	},
+
+	-- Floating terminals embedded in neovim
+	{
+		'voldikss/vim-floaterm'
 	}
 }

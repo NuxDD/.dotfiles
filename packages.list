@@ -41,3 +41,4 @@ zaproxy
 fuse
 thrift
 protobuf
+rust-analyzer
