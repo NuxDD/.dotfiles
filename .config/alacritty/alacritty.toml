@@ -29,3 +29,15 @@ opacity = 1
 [window.padding]
 x = 10
 y = 10
+
+[[keyboard.bindings]]
+key = "K"
+mods = "Alt"
+action = "ScrollPageUp"
+mode = "~Alt"
+
+[[keyboard.bindings]]
+key = "J"
+mods = "Alt"
+action = "ScrollPageDown"
+mode = "~Alt"
