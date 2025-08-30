@@ -33,11 +33,11 @@ y = 10
 [[keyboard.bindings]]
 key = "K"
 mods = "Alt"
-action = "ScrollPageUp"
+action = "ScrollHalfPageUp"
 mode = "~Alt"
 
 [[keyboard.bindings]]
 key = "J"
 mods = "Alt"
-action = "ScrollPageDown"
+action = "ScrollHalfPageDown"
 mode = "~Alt"
