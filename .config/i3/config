@@ -105,11 +105,12 @@ exec --no-startup-id alacritty
 exec --no-startup-id discord
 exec --no-startup-id feh --bg-scale ~/.wp/wp.png
 exec --no-startup-id picom
-exec_always --no-startup-id "killall polybar; polybar -r default"
+exec_always --no-startup-id "killall polybar; for m in $(xrandr --query | grep ' connected' | cut -d' ' -f1); do MONITOR=$m polybar -r default & done"
 exec_always --no-startup-id "xinput set-prop 'Logitech G203 Prodigy Gaming Mouse' 'libinput Accel Speed' -0.6"
 exec_always --no-startup-id "xinput set-prop 'Logitech G203 Prodigy Gaming Mouse' 'libinput Accel Profile Enabled' 0 1 0"
 exec_always --no-startup-id "xinput set-prop 'Logitech USB Receiver' 'libinput Accel Speed' -0.6"
 exec_always --no-startup-id "xinput set-prop 'Logitech USB Receiver' 'libinput Accel Profile Enabled' 0 1 0"
+exec_always --no-startup-id sh -c 'xinput list | grep "Logitech PRO X 2.*pointer" | sed "s/.*id=\\([0-9]*\\).*/\\1/" | while read id; do xinput set-prop $id "libinput Accel Speed" -0.6; xinput set-prop $id "libinput Accel Profile Enabled" 0 1 0; done'
 exec_always --no-startup-id "setxkbmap -layout us,us -variant ,intl -option grp:win_space_toggle"
 
 ###### THEME - ROSE PINE
