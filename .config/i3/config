@@ -24,14 +24,20 @@ bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 bindsym $mod+h focus left
-bindsym $alt+a focus left
-bindsym $alt+f focus right
+
+# Change monitor focus
+bindsym $alt+a focus output left
+bindsym $alt+f focus output right
 
 # Move focused window
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 bindsym $mod+Shift+h move left
+
+# Move workspace to left/right monitor
+bindsym $alt+Shift+a move workspace to output left
+bindsym $alt+Shift+f move workspace to output right
 
 # Move a window with the mouse while holding mod
 tiling_drag modifier titlebar
