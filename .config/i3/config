@@ -102,6 +102,8 @@ exec --no-startup-id picom
 exec_always --no-startup-id "killall polybar; polybar -r default"
 exec_always --no-startup-id "xinput set-prop 'Logitech G203 Prodigy Gaming Mouse' 'libinput Accel Speed' -0.6"
 exec_always --no-startup-id "xinput set-prop 'Logitech G203 Prodigy Gaming Mouse' 'libinput Accel Profile Enabled' 0 1 0"
+exec_always --no-startup-id "xinput set-prop 'Logitech USB Receiver' 'libinput Accel Speed' -0.6"
+exec_always --no-startup-id "xinput set-prop 'Logitech USB Receiver' 'libinput Accel Profile Enabled' 0 1 0"
 exec_always --no-startup-id "setxkbmap -layout us,us -variant ,intl -option grp:win_space_toggle"
 
 ###### THEME - ROSE PINE
