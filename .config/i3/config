@@ -111,6 +111,7 @@ exec_always --no-startup-id "xinput set-prop 'Logitech G203 Prodigy Gaming Mouse
 exec_always --no-startup-id "xinput set-prop 'Logitech USB Receiver' 'libinput Accel Speed' -0.6"
 exec_always --no-startup-id "xinput set-prop 'Logitech USB Receiver' 'libinput Accel Profile Enabled' 0 1 0"
 exec_always --no-startup-id "xinput set-prop 'Sony Interactive Entertainment Wireless Controller Touchpad' 'Device Enabled' 0"
+exec_always --no-startup-id "xrandr --output DisplayPort-1 --mode 1920x1080 --rate 144"
 exec_always --no-startup-id sh -c 'xinput list | grep "Logitech PRO X 2.*pointer" | sed "s/.*id=\\([0-9]*\\).*/\\1/" | while read id; do xinput set-prop $id "libinput Accel Speed" -0.6; xinput set-prop $id "libinput Accel Profile Enabled" 0 1 0; done'
 exec_always --no-startup-id "setxkbmap -layout us,us -variant ,intl -option grp:win_space_toggle"
 
